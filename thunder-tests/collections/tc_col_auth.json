@@ -1,0 +1,91 @@
+{
+    "_id": "b4608caf-2b87-4e1c-8ea4-d4b7010b4a85",
+    "colName": "AUTH",
+    "created": "2023-08-10T18:26:02.105Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a0fbcab8-d902-49c0-b10d-925173094a5f",
+            "colId": "b4608caf-2b87-4e1c-8ea4-d4b7010b4a85",
+            "containerId": "",
+            "name": "login",
+            "url": "http://127.0.0.1:8000/api/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-10T18:26:14.782Z",
+            "modified": "2023-08-10T19:26:55.648Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"ari@mail.com\",\n  \"password\": \"Test1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "23e1dd02-6f68-4781-9dab-1928d1db90ef",
+            "colId": "b4608caf-2b87-4e1c-8ea4-d4b7010b4a85",
+            "containerId": "",
+            "name": "register",
+            "url": "http://127.0.0.1:8000/api/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-10T18:26:21.514Z",
+            "modified": "2023-08-10T19:02:35.115Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"ari\",\n  \"email\": \"ari@mail.com\",\n  \"password\": \"Test1234\",\n  \"password_confirmation\": \"Test1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "deb532e9-31ac-4e27-82f5-76d170fb274b",
+            "colId": "b4608caf-2b87-4e1c-8ea4-d4b7010b4a85",
+            "containerId": "",
+            "name": "logout",
+            "url": "http://127.0.0.1:8000/api/logout",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-08-10T18:26:53.506Z",
+            "modified": "2023-08-10T21:44:02.827Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "envId": "97213055-b146-4e89-8ae8-4766eeee7791"
+    }
+}

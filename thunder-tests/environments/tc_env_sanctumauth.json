@@ -1,0 +1,14 @@
+{
+    "_id": "97213055-b146-4e89-8ae8-4766eeee7791",
+    "name": "sanctum_auth",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2023-08-10T19:34:49.587Z",
+    "modified": "2023-08-10T19:34:49.587Z",
+    "data": [
+        {
+            "name": "token",
+            "value": "8|qf55H2lB7CpvLbY28H1YyWye3XeKVzLjY96IzKKO"
+        }
+    ]
+}

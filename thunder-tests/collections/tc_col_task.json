@@ -1,0 +1,135 @@
+{
+    "_id": "748f8ea6-c2be-4673-a854-f63d6ef63603",
+    "colName": "TASK",
+    "created": "2023-08-10T19:33:54.316Z",
+    "sortNum": 20000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f1c1907f-e9d1-418d-9efb-74a4c33b5db6",
+            "colId": "748f8ea6-c2be-4673-a854-f63d6ef63603",
+            "containerId": "",
+            "name": "index",
+            "url": "http://127.0.0.1:8000/api/tasks",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-10T19:35:58.670Z",
+            "modified": "2023-08-10T19:43:09.836Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer {{token}}",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b52099dd-1afc-4961-8156-b92581dbecd8",
+            "colId": "748f8ea6-c2be-4673-a854-f63d6ef63603",
+            "containerId": "",
+            "name": "store",
+            "url": "http://127.0.0.1:8000/api/tasks",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-10T20:55:24.097Z",
+            "modified": "2023-08-10T21:36:24.053Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"going somewhere\",\n  \"description\": \"you need to walk for 30 minutes\",\n  \"priority\": \"high\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f02c4038-cc86-4f08-affd-9e892e62d08c",
+            "colId": "748f8ea6-c2be-4673-a854-f63d6ef63603",
+            "containerId": "",
+            "name": "show",
+            "url": "http://127.0.0.1:8000/api/tasks/251",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-08-10T21:02:40.982Z",
+            "modified": "2023-08-10T21:37:15.417Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fe471e7b-2396-4ef6-8e3c-2bab1fcc8ba0",
+            "colId": "748f8ea6-c2be-4673-a854-f63d6ef63603",
+            "containerId": "",
+            "name": "update - patch",
+            "url": "http://127.0.0.1:8000/api/tasks/252",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-08-10T21:13:04.421Z",
+            "modified": "2023-08-10T21:35:39.498Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ba099c9b-2edb-4805-ab29-d895d52f0960",
+            "colId": "748f8ea6-c2be-4673-a854-f63d6ef63603",
+            "containerId": "",
+            "name": "destroy",
+            "url": "http://127.0.0.1:8000/api/tasks/252",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-08-10T21:17:20.019Z",
+            "modified": "2023-08-10T21:37:02.385Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "headers": [
+            {
+                "name": "Authorization",
+                "value": "{{token}}",
+                "isDisabled": true
+            }
+        ],
+        "auth": {
+            "type": "bearer",
+            "bearer": "{{token}}"
+        },
+        "envId": "97213055-b146-4e89-8ae8-4766eeee7791"
+    }
+}

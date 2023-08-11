@@ -1,0 +1,30 @@
+[
+    {
+        "_id": "877ab82c-4660-4a0c-8995-27f546e088e2",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://127.0.0.1:8000/api/register",
+        "url": "http://127.0.0.1:8000/api/register",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2023-08-10T18:24:43.395Z",
+        "modified": "2023-08-10T18:24:43.395Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    },
+    {
+        "_id": "22580e97-8c66-4f20-96d3-043ca695a9fb",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://127.0.0.1:8000/api/login",
+        "url": "http://127.0.0.1:8000/api/login",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2023-08-10T18:25:30.414Z",
+        "modified": "2023-08-10T18:25:30.414Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    }
+]
